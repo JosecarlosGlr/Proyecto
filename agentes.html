@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valin</title>
+    <link rel="stylesheet" href="agentes.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Agentes</h1>
+        <hr id="lineat">
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="agentes.html">Agentes</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="https://playvalorant.com/es-es/news/">Noticias</a></li>
+            </ul>
+        </nav>
+        </header>
+    
+        <section class="hero">
+            <h2>Descubre a los agentes</h2>
+            <p>Explora las habilidades y características de cada agente en Valorant.</p>
+        </section>
+        <div class="filters">
+            <input type="text" id="searchBar" placeholder="Buscar por nombre" />
+            <select id="roleSelector">
+                <option value="">Seleccionar rol</option>
+                <option value="Duelist">Duelista</option>
+                <option value="Sentinel">Centinela</option>
+                <option value="Controller">Controlador</option>
+                <option value="Initiator">Iniciador</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Contenedor de agentes -->
+    <section id="agents-container" class="agents"></section>
+
+    <!-- Modal para mostrar información del agente -->
+    <div id="agentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="agentName"></h2>
+            <img id="agentImage" src="" alt="Agent Image">
+            <p id="agentDescription"></p>
+            <h3>Habilidades</h3>
+            <ul id="abilitiesList"></ul>
+        </div>
+    </div>
+
+    <script src="agentes.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Valorant Fan Page | No oficial</p>
+    </footer>
+</body>
+</html>
